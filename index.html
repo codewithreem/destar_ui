@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destar_UI intro page</title>
+    <link
+      rel="icon"
+      href="photos/IMG-20230829-WA0107.ico"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .loading-container {
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(194, 50, 219);
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .loading-spinner {
+        width: 100px;
+        height: 100px;
+        border: 10px solid rgb(187, 179, 189);
+        border-top-color: rgb(194, 50, 219);
+        border-radius: 50%;
+        animation: spin 2s linear infinite;
+        margin-top: 20px;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading-container">
+      <div class="container">
+        <img src="photos/IMG-20230829-WA0107.ico" alt="" />
+      </div>
+      <h2 style="margin-bottom: 100px; font-family: consolas">
+        Welcome To Destar.UI
+      </h2>
+      <div class="loading-spinner"></div>
+      <p style="margin: 10px; font-family: consolas">loading......</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

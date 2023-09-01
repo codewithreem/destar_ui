@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Include Swiper CSS -->
+    <title>Destar_UI homepage</title>
+    <link rel="icon" href="photos/IMG-20230829-WA0107.ico" type="image/x-icon">
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: white; /* Dark background color */
+        margin: 0;
+        padding: 0;
+        font-family: lato;
+        color: rgb(195, 50, 219);
+      }
+
+      .navbar {
+        background-color: rgb(195, 50, 219); /* Dark background color */
+      }
+
+      .navbar-dark .navbar-nav .nav-link {
+        color: white;
+      }
+      button {
+        margin-bottom: 2px;
+        margin-top: 20px;
+        border-radius: 10000px;
+        cursor: pointer;
+        outline: none;
+      }
+      button:active {
+        border: 1px solid rgb(195, 50, 219);
+      }
+
+      /* Hide the images initially */
+      /* Set dimensions and center the swiper container */
+
+      /* Style the images inside swiper slides */
+
+      /* Custom button styles */
+
+      .footer {
+        background-color: rgb(195, 50, 219);
+        display: block;
+        margin-top: 100px;
+        color: white;
+        z-index: 1000;
+        text-align: center;
+        height: 50px;
+      }
+
+      /* Reduce the space between columns */
+      .custom-column {
+        padding: 0; /* Remove padding */
+        margin: 0 -10px; /* Add negative margin to offset Bootstrap's column gutters */
+      }
+      .custom-column img {
+        width: 100%; /* Ensure the image takes up the entire column width */
+      }
+
+      /* Style the container of the pagination dots */
+      /* Position the pagination above the footer */
+
+      /* Style the active pagination dot */
+
+      @media (min-width: 768px) {
+        button {
+          height: 70px;
+        }
+        .footer {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+      }
+
+      /* Media query for small screens */
+      @media (max-width: 767px) {
+        /* Hide the element on small screens */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="about.html"
+          ><p style="display: inline">Destar_UI</p></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="homepage.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <p style="margin-bottom: 20px"></p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6 Custom">
+          <img
+            src="photos/IMG-20230829-WA0107.ico"
+            alt="Image"
+            class="img-fluid"
+            style="height: 150px"
+          />
+        </div>
+
+        <div class="col-6 custom-column">
+          <p style="color: black; font-size: 25px; font-family: lato">
+            Welcome to a World Where Creativity Meets Functionality
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <a href="colorselection.html">
+            <img
+              src="photos/sideb.jpg"
+              class="img-fluid"
+              alt="Image 1"
+              style="height: 200px"
+          /></a>
+        </div>
+        <div class="col-6">
+          <img
+            src="photos/sideA.jpg"
+            class="img-fluid"
+            alt="Image 2"
+            style="height: 200px"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="btncon">
+      <h6 style="margin-top: 20px; font-size: 20px; color: black">
+        UI/UX design tips and useful information to know as a designer
+      </h6>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-3">
+          <button
+            class="btn btn-primary btn-lg btn-block"
+            style="
+              background-color: rgb(195, 50, 219);
+              border-radius: 40px;
+              outline: none;
+            "
+            id="btn1"
+          >
+            Learn UI design from Zero to hero
+          </button>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <button
+            class="btn btn-primary btn-lg btn-block"
+            id="btn2"
+            style="
+              background-color: rgb(195, 50, 219);
+              border-radius: 40px;
+              border: 1px solid rgb(195, 50, 219);
+            "
+          >
+            Steps to your Ux career
+          </button>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <button
+            id="btn3"
+            class="btn btn-primary btn-lg btn-block"
+            style="background-color: rgb(195, 50, 219); border-radius: 40px"
+          >
+            Marketing in UI/UX design
+          </button>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <button
+            id="btn4"
+            class="btn btn-primary btn-lg btn-block"
+            style="background-color: rgb(195, 50, 219); border-radius: 40px"
+          >
+            Landing Your First Gig as a designer
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">&copy; Destar_UI 2023 All Rights Reserved</div>
+    <script src="indexmain.js"></script>
+    <!-- Include your custom script -->
+
+    <!-- Include Swiper CSS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
